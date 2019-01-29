@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <title>Agri-bourse Administration</title>
+    
+	<!-- Bootstrap 4.0-->
+	<link rel="stylesheet" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+    
+	<!--amcharts -->
+	<link href="https://www.amcharts.com/lib/3/plugins/export/export.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Bootstrap-extend -->
+	<link rel="stylesheet" href="../src/css/bootstrap-extend.css">
+	
+	<!-- theme style -->
+	<link rel="stylesheet" href="../src/css/master_style.css">
+	
+	<!-- Crypto_Admin skins -->
+  <link rel="stylesheet" href="../src/css/skins/_all-skins.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+	
+     
+  </head>
+
+<body class="hold-transition skin-red sidebar-mini fixed">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+	  <b class="logo-mini">
+		  <span class="light-logo"><img src="../images/logo-light.png" alt="logo"></span>
+		  <span class="dark-logo"><img src="../images/logo-dark.png" alt="logo"></span>
+	  </b>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">
+		  <img src="../images/logo-light-text.png" alt="logo" class="light-logo">
+	  	  <img src="../images/logo-dark-text.png" alt="logo" class="dark-logo">
+	  </span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+		  
+		  <li class="search-box">
+            <a class="nav-link hidden-sm-down" href="javascript:void(0)"><i class="mdi mdi-magnify"></i></a>
+            <form class="app-search" style="display: none;">
+                <input type="text" class="form-control" placeholder="Rechercher"> <a class="srh-btn"><i class="ti-close"></i></a>
+			</form>
+          </li>			
+		  
+          <!-- Messages -->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="mdi mdi-email"></i>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">Vous avez 1 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu inner-content-div">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../images/user2-160x160.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Lorem Ipsum
+                          <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                         </h4>
+                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Voir tous les messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="mdi mdi-bell"></i>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">Vous avez 7 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu inner-content-div">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> Variation hebdomadaire
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Voir toutes les notifications</a></li>
+            </ul>
+          </li>
+          
+         
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+		 <div class="ulogo">
+              <!-- logo for regular state and mobile devices -->
+              <img src="../images/logoAgribourse.png" alt="" width="180">
+		</div>
+        <div class="image">
+          <img src="../images/fleur.jpg" class="rounded-circle" alt="User Image">
+        </div>
+        <div class="info">
+          <p>PENDY FLEUR ADRIELLA</p>
+			<a href="" class="link" data-toggle="tooltip" title="" data-original-title="Parametre"><i class="ion ion-gear-b"></i></a>
+            <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Message"><i class="ion ion-android-mail"></i></a>
+            <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Deconnexion"><i class="ion ion-power"></i></a>
+        </div>
+      </div>
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+		<li class="nav-devider"></li>
+        <li class="active">
+          <a href="index.html">
+            <i class="icon-home"></i> <span>Accueil</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <li class="">
+          <a href="listeprojets.html">
+            <i class="fas fa-project-diagram"></i> <span>Listes des Projets</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <li class="">
+          <a href="importer.html">
+              <i class="fas fa-upload"></i><span>Importer des données</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+      
+      
+        
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="margin-top:20px;padding-bottom: 8px;">
+            <div class="box box-inverse box-dark">
+                <div class="box-body tickers-block">
+                    <ul id="webticker-1">
+                        <li><i class="fas fa-money-bill-wave-alt"></i> TOMATE <span class="text-yellow"> XAF/Kg 1200</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> MANIOC <span class="text-yellow"> XAF/Kg 800</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> PIMENT <span class="text-yellow"> XAF/Kg 2000</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> BANANE <span class="text-yellow"> XAF/Kg 1500</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> OIGNON <span class="text-yellow"> XAF/Kg 1000</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> MANDARINE <span class="text-yellow"> XAF/Kg 800</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> CITRON <span class="text-yellow"> XAF/Kg 1999</span></li> 
+                        <li><i class="fas fa-money-bill-wave-alt"></i> CACAO <span class="text-yellow"> XAF/Kg 2100</span></li>g
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="row">
+
+          <!-- Bloc d'information reservé au bananes -->
+        
+          <div class="col-lg-4 col-md-6">
+              <div class="box pull-up">
+              <div class="box-body">
+                <div class="media align-items-center p-0">
+                <div class="text-center">
+                  <a href="#" data-toggle="modal" data-target="#modal-banane"><img src="../images/banana.png" alt="" style="width:30%;"></a>
+                </div>
+                <div>
+                    <h3 class="no-margin text-bold"><a href="" data-toggle="modal" data-target="#modal-banane">BANANE</a> </h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-5">
+                <div>
+                  <p class="no-margin font-weight-600"><span class="text-yellow">Tendance de production</span></p>
+                </div>
+                <div class="text-right">
+                  <p class="no-margin font-weight-600"><span class="text-success">+1.35%</span></p>
+                </div>
+                </div>
+            </div>
+            <div class="box-footer p-0 no-border">
+              <div class="chart"><canvas id="chartjs1" class="h-80"></canvas></div>
+            </div>
+          </div>
+          </div>
+      
+        <div class="modal center-modal fade" id="modal-banane" tabindex="-2">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title center">TENDANCE DE L'OIGNON AU GABON</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">Tendance</option>
+                          <option value="">Prix</option>
+                          <option value="">Vente</option>
+                          <option value="">Production</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="" class="form-control" id="" style="height:30px;">
+                            <option value="">Lieu</option>
+                            <option value="">Libreville</option>
+                            <option value="">Port-Gentil</option>
+                            <option value="">Oyem</option>
+                          </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="" class="form-control" id="" style="height:30px;">
+                            <option value="">BANANE</option>
+                            <option value="">PIMENT</option>
+                            <option value="">TOMATE</option>
+                            <option value="">OIGNON</option>
+                            <option value="">MANIOC</option>
+                          </select>
+                    </div>
+                </div>
+                  <canvas id="myChart" width="400" height="400"></canvas>
+                  <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+                  <a href="" class="btn btn-success float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+                  <a href="" class="btn btn-success float-left btn-circle"><i class="fas fa-file-csv"></i></a>
+                  <a href="" class="btn btn-success float-left btn-circle"><i class="far fa-file-excel"></i></a>
+                  <a href="Agri-bourse Administration.pdf" target="_blank" class="btn btn-success float-left btn-circle"><i class="far fa-file-pdf"></i> </a>
+
+
+                  <div class="table-responsive">
+                      <table class="table table-hover no-wrap">
+                          <thead>
+                              <tr>
+                                <th>Nom exploitant</th>
+                                <th>Productions</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Exploitants 1</td>
+                                <td>0.9 Tonnes</td>
+                                <td><span class="label label-success">Actif</span> 
+                                </td>
+                                <td><a href="sigle.html" class="btn btn-sm btn-info-outline" ><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>Exploitants 2</td>
+                                  <td>0.2 Tonnes</td>
+                                  <td><span class="label label-warning">Stable</span> 
+                                  </td>
+                                  <td><a href="sigle.html" class="btn btn-sm btn-info-outline"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                  </td>
+                                </tr>
+                            </tbody>
+
+                      </table>
+                  </div>
+              </div>
+          
+            </div>
+            </div>
+        </div>
+
+          <!-- Bloc d'information des oignon -->
+			<div class="col-lg-4 col-md-6">
+		    	<div class="box pull-up">
+				  <div class="box-body">
+					  <div class="media align-items-center p-0">
+						<div class="text-center">
+						  <a href="#" data-toggle="modal" data-target="#modal-oignon"><i class="cc LTC mr-5" title="LTC"></i></a>
+						</div>
+						<div>
+                <h3 class="no-margin text-bold"><a href="" data-toggle="modal" data-target="#modal-oignon">OIGNON</a> </h3>
+              </div>
+					  </div>
+					  <div class="flexbox align-items-center mt-5">
+						<div>
+                <p class="no-margin font-weight-600"><span class="text-yellow">Tendance de production</span></p>
+            </div>
+						<div class="text-right">
+						  <p class="no-margin font-weight-600"><span class="text-danger">-1.35%</span></p>
+						</div>
+					  </div>
+				</div>
+				<div class="box-footer p-0 no-border">
+					<div class="chart"><canvas id="chartjs2" class="h-80"></canvas></div>
+				</div>
+			 </div>
+      </div>
+      <div class="modal center-modal fade" id="modal-oignon" tabindex="-1">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title center">TENDANCE DE L'OIGNON AU GABON</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                        <option value="">Tendance</option>
+                        <option value="">Prix</option>
+                        <option value="">Vente</option>
+                        <option value="">Production</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">Lieu</option>
+                          <option value="">Libreville</option>
+                          <option value="">Port-Gentil</option>
+                          <option value="">Oyem</option>
+                        </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                         <option value="">OIGNON</option>
+                          <option value="">TOMATE</option>
+                          <option value="">PIMENT</option>
+                          <option value="">BANANE</option>
+                         
+                          <option value="">MANIOC</option>
+                        </select>
+                  </div>
+              </div>
+                <canvas id="myChart1" width="400" height="400"></canvas>
+            </div>
+            <div class="modal-footer modal-footer-uniform">
+            <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+            <a href="" class="btn btn-success float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+            <a href="" class="btn btn-primary float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- Bloc d'information lié au Tomate -->
+			<div class="col-lg-4 col-md-6">
+		    	<div class="box pull-up">
+				  <div class="box-body">
+					  <div class="media align-items-center p-0">
+						<div class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#modal-tomate"><img src="../images/tomato.png" alt="" style="width:30%;"></a>
+                            </div>
+						<div>
+						  <h3 class="no-margin text-bold"><a href="" data-toggle="modal" data-target="#modal-tomate">TOMATE</a> </h3>
+						</div>
+					  </div>
+					  <div class="flexbox align-items-center mt-5">
+						<div>
+                                <p class="no-margin font-weight-600"><span class="text-yellow">Tendance de production</span></p>
+                            </div>
+						<div class="text-right">
+						  <p class="no-margin font-weight-600"><span class="text-danger">-1.35%</span></p>
+						</div>
+					  </div>
+				</div>
+				<div class="box-footer p-0 no-border">
+					<div class="chart"><canvas id="chartjs3" class="h-80"></canvas></div>
+				</div>
+			 </div>
+      </div>
+      <div class="modal center-modal fade" id="modal-tomate" tabindex="-1">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title center">TENDANCE DE TOMATE AU GABON</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                        <option value="">Tendance</option>
+                        <option value="">Prix</option>
+                        <option value="">Vente</option>
+                        <option value="">Production</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">Lieu</option>
+                          <option value="">Libreville</option>
+                          <option value="">Port-Gentil</option>
+                          <option value="">Oyem</option>
+                        </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">TOMATE</option>
+                          <option value="">PIMENT</option>
+                          <option value="">BANANE</option>
+                          <option value="">OIGNON</option>
+                          <option value="">MANIOC</option>
+                        </select>
+                  </div>
+              </div>
+                <canvas id="myChart2" width="400" height="400"></canvas>
+            </div>
+            <div class="modal-footer modal-footer-uniform">
+            <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+            </div>
+          </div>
+          </div>
+      </div>
+       </div>
+       <div class="row">
+         <!-- Bloc d'information sur le PIMENT -->
+            <div class="col-lg-6 col-md-6">
+                    <div class="box pull-up">
+                      <div class="box-body">
+                          <div class="media align-items-center p-0">
+                            <div class="text-center">
+                              <a href="#" data-toggle="modal" data-target="#modal-piment"><img src="../images/chili.png" alt="" style="width:15%;"></a>
+                            </div>
+                            <div>
+                                <h3 class="no-margin text-bold"><a href="" data-toggle="modal" data-target="#modal-piment">PIMENT</a> </h3>
+                              </div>
+                          </div>
+                          <div class="flexbox align-items-center mt-5">
+                            <div>
+                                    <p class="no-margin font-weight-600"><span class="text-yellow">Tendance de production</span></p>
+                                </div>
+                            <div class="text-right">
+                              <p class="no-margin font-weight-600"><span class="text-success">+1.35%</span></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="box-footer p-0 no-border">
+                        <div class="chart"><canvas id="chartjs4" class="h-80"></canvas></div>
+                    </div>
+                 </div>
+              </div>
+              <div class="modal center-modal fade" id="modal-piment" tabindex="-1">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title center">TENDANCE DU PIMENT AU GABON</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <select name="" class="form-control" id="" style="height:30px;">
+                                <option value="">Tendance</option>
+                                <option value="">Prix</option>
+                                <option value="">Vente</option>
+                                <option value="">Production</option>
+                              </select>
+                          </div>
+                          <div class="col-md-4">
+                              <select name="" class="form-control" id="" style="height:30px;">
+                                  <option value="">Lieu</option>
+                                  <option value="">Libreville</option>
+                                  <option value="">Port-Gentil</option>
+                                  <option value="">Oyem</option>
+                                </select>
+                          </div>
+                          <div class="col-md-4">
+                              <select name="" class="form-control" id="" style="height:30px;">
+                                  <option value="">PIMENT</option>
+                                  <option value="">TOMATE</option>
+                                  
+                                  <option value="">BANANE</option>
+                                  <option value="">OIGNON</option>
+                                  <option value="">MANIOC</option>
+                                </select>
+                          </div>
+                      </div>
+                        <canvas id="myChart3" width="400" height="400"></canvas>
+                    </div>
+                    <div class="modal-footer modal-footer-uniform">
+                    <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+                    <a href="" class="btn btn-success float-left btn-circle" title="Partager cette donnée"><i class="fa fa-project-diagram"></i> </a>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <!-- Bloc d'information sur le Manioc -->
+        <div class="col-lg-6 col-md-6">
+            <div class="box pull-up">
+              <div class="box-body">
+                  <div class="media align-items-center p-0">
+                    <div class="text-center">
+                      <a href="#" data-toggle="modal" data-target="#modal-manioc"><img src="../images/tubercule.png" alt="" style="width:15%;"></a>
+                    </div>
+                    <div>
+                        <h3 class="no-margin text-bold"><a href="" data-toggle="modal" data-target="#modal-manioc">MANIOC</a> </h3>
+                      </div>
+                  </div>
+                  <div class="flexbox align-items-center mt-5">
+                    <div>
+                            <p class="no-margin font-weight-600"><span class="text-yellow">Tendance de production</span></p>
+                        </div>
+                    <div class="text-right">
+                      <p class="no-margin font-weight-600"><span class="text-success">+1.35%</span></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="box-footer p-0 no-border">
+                <div class="chart"><canvas id="chartjs6" class="h-80"></canvas></div>
+            </div>
+         </div>
+      </div>
+      <div class="modal center-modal fade" id="modal-manioc" tabindex="-1">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title center">TENDANCE DU MANIOC AU GABON</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                        <option value="">Tendance</option>
+                        <option value="">Prix</option>
+                        <option value="">Vente</option>
+                        <option value="">Production</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">Lieu</option>
+                          <option value="">Libreville</option>
+                          <option value="">Port-Gentil</option>
+                          <option value="">Oyem</option>
+                        </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">MANIOC</option>
+                          <option value="">TOMATE</option>
+                          <option value="">PIMENT</option>
+                          <option value="">BANANE</option>
+                          <option value="">OIGNON</option>
+                          
+                        </select>
+                  </div>
+              </div>
+                <canvas id="myChart4" width="400" height="400"></canvas>
+            </div>
+            <div class="modal-footer modal-footer-uniform">
+            <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+            <a href="" class="btn btn-success float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+            </div>
+          </div>
+          </div>
+      </div>
+   </div>
+   <div class="modal modal-right fade" id="modal-tchat" tabindex="-1">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Commmentaires</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <div class="box-body">
+                <!-- Conversations are loaded here -->
+                <div id="chat-app" class="direct-chat-messages chat-app" style="height:500px;">
+                  <!-- Message. Default to the left -->
+                  <div class="direct-chat-msg mb-30">
+            <div class="clearfix mb-15">
+            <span class="direct-chat-name">Pendy Fleur</span>
+            <span class="direct-chat-timestamp pull-right">Jan 14, 2019 18:00 </span>
+            </div>
+            <!-- /.direct-chat-info -->
+            <img class="direct-chat-img avatar rounded-circle" src="../images/fleur.jpg"  alt="Commentaire de l'administrateur">
+            <!-- /.direct-chat-img -->
+            <div class="direct-chat-text">
+                Ce produits a une croissance stanble pendant les 3 mois de la grande saisons seche et en plus son prix baisse. Forte production et forte consommation
+            </div>					
+            
+            <!-- /.direct-chat-text -->
+          </div>
+                  <!-- /.direct-chat-msg -->
+  
+                  <!-- Message to the right -->
+                  <div class="direct-chat-msg right mb-30">
+            <div class="clearfix mb-15">
+            <span class="direct-chat-name pull-right">Gabin Steeven</span>
+            <span class="direct-chat-timestamp ">Jan 18, 2019 16:00</span>
+            </div>
+            <!-- /.direct-chat-info -->
+            <img class="direct-chat-img avatar" src="../../../images/user3-128x128.jpg" alt="message user image">
+            <!-- /.direct-chat-img -->
+            <div class="direct-chat-text">
+                En effet super analyse je vais partagé cette tendance sur facebook
+            </div>
+            <!-- /.direct-chat-text -->
+          </div>
+                  <!-- /.direct-chat-msg -->
+          
+          
+        </div>
+        </div>
+        <div class="modal-footer modal-footer-uniform">
+          <input type="text" class="form-control" style="width:300px;;">
+        </div>
+      </div>
+      </div>
+    </div>
+	<div class="modal center-modal fade" id="modal-oignon" tabindex="-1">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title center">TENDANCE DE L'OIGNON AU GABON</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                        <option value="">Tendance</option>
+                        <option value="">Prix</option>
+                        <option value="">Vente</option>
+                        <option value="">Production</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                          <option value="">Lieu</option>
+                          <option value="">Libreville</option>
+                          <option value="">Port-Gentil</option>
+                          <option value="">Oyem</option>
+                        </select>
+                  </div>
+                  <div class="col-md-4">
+                      <select name="" class="form-control" id="" style="height:30px;">
+                         <option value="">OIGNON</option>
+                          <option value="">TOMATE</option>
+                          <option value="">PIMENT</option>
+                          <option value="">BANANE</option>
+                         
+                          <option value="">MANIOC</option>
+                        </select>
+                  </div>
+              </div>
+                <canvas id="myChart1" width="400" height="400"></canvas>
+            </div>
+            <div class="modal-footer modal-footer-uniform">
+            <a href="" class="btn btn-primary float-right btn-circle btn-lg" title="Laisser un commentaire" data-toggle="modal" data-target="#modal-tchat"><i class="fa fa-comments"></i> </a>
+            <a href="" class="btn btn-success float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+            <a href="" class="btn btn-primary float-left btn-circle"><i class="fa fa-project-diagram"></i> </a>
+
+            </div>
+          </div>
+          </div>
+      </div>
+	</section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2018 <a href="https://www.multipurposethemes.com/">Ecole241</a>. Tous droits resérvés.
+  </footer>
+
+
+  
+  
+</div>
+<!-- ./wrapper -->
+  	
+	 
+	  
+	<!-- jQuery 3 -->
+	<script src="../assets/vendor_components/jquery/dist/jquery.js"></script>
+	
+	<!-- popper -->
+	<script src="../assets/vendor_components/popper/dist/popper.min.js"></script>
+	
+	<!-- Bootstrap 4.0-->
+	<script src="../assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Slimscroll -->
+	<script src="../assets/vendor_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+	
+	<!-- FastClick -->
+	<script src="../assets/vendor_components/fastclick/lib/fastclick.js"></script>
+	
+    <!--amcharts charts -->
+	<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/gauge.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/serial.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/amstock.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/pie.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/animate/animate.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/export/export.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/patterns.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>	
+	
+	<!-- webticker -->
+	<script src="../assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
+	
+	<!-- EChartJS JavaScript -->
+	<script src="../assets/vendor_components/echarts-master/dist/echarts-en.min.js"></script>
+	<script src="../assets/vendor_components/echarts-liquidfill-master/dist/echarts-liquidfill.min.js"></script>
+	
+	<!-- This is data table -->
+    <script src="../assets/vendor_plugins/DataTables-1.10.15/media/js/jquery.dataTables.min.js"></script>
+	
+	<!-- Crypto_Admin App -->
+	<script src="../src/js/template.js"></script>
+	
+		<!-- Chart -->
+        <script src="../assets/vendor_components/chart.js-master/Chart.min.js"></script>
+        <script src="../src/js/pages/chartjs-int.js"></script>
+	
+	<!-- Crypto_Admin for demo purposes -->
+    <script src="../src/js/demo.js"></script>
+    <script src="../src/js/pages/web-ticker.js"></script>
+    
+
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var ctx1 = document.getElementById("myChart1").getContext('2d');
+        var ctx2 = document.getElementById("myChart2").getContext('2d');
+        var ctx3 = document.getElementById("myChart3").getContext('2d');
+        var ctx4 = document.getElementById("myChart4").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Jum"],
+                datasets: [{
+                    label: '# Production en tonnes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        var myChart = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juill"],
+                datasets: [{
+                    label: '# Production en tonnes',
+                    data: [2, 3, 3, 3, 2, 2],
+                    backgroundColor: [
+                        
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                       
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        var myChart = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juill"],
+                datasets: [{
+                    label: '# Production en tonnes',
+                    data: [10, 6, 9, 9, 10.7, 8.9],
+                    backgroundColor: [
+                        
+                       
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                       
+                        
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        var myChart = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juill"],
+                datasets: [{
+                    label: '# Production en tonnes',
+                    data: [6, 6.9, 9, 12, 10.7, 9],
+                    backgroundColor: [
+                        
+                       
+                        
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                       
+                        
+             
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        var myChart = new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juill"],
+                datasets: [{
+                    label: '# Production en tonnes',
+                    data: [10, 6, 9, 9, 10.7, 8.9],
+                    backgroundColor: [
+                        
+                       
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                       
+                  
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+
+	
+</body>
+</html>

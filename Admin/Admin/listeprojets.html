@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <title>Agri-bourse Administration</title>
+    
+		<!-- Bootstrap 4.0-->
+        <link rel="stylesheet" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
+	
+        <!-- Bootstrap extend-->
+        <link rel="stylesheet" href="../src/css/bootstrap-extend.css">
+    
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../src/css/master_style.css">
+    
+        <!-- Crypto_Admin skins -->
+        <link rel="stylesheet" href="../src/css/skins/_all-skins.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+	
+     
+  </head>
+
+<body class="hold-transition skin-red sidebar-mini fixed">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+	  <b class="logo-mini">
+		  <span class="light-logo"><img src="../images/logo-light.png" alt="logo"></span>
+		  <span class="dark-logo"><img src="../images/logo-dark.png" alt="logo"></span>
+	  </b>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">
+		  <img src="../images/logo-light-text.png" alt="logo" class="light-logo">
+	  	  <img src="../images/logo-dark-text.png" alt="logo" class="dark-logo">
+	  </span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+		  
+		  <li class="search-box">
+            <a class="nav-link hidden-sm-down" href="javascript:void(0)"><i class="mdi mdi-magnify"></i></a>
+            <form class="app-search" style="display: none;">
+                <input type="text" class="form-control" placeholder="Rechercher"> <a class="srh-btn"><i class="ti-close"></i></a>
+			</form>
+          </li>			
+		  
+          <!-- Messages -->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="mdi mdi-email"></i>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">Vous avez 1 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu inner-content-div">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../images/user2-160x160.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Lorem Ipsum
+                          <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                         </h4>
+                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Voir tous les messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="mdi mdi-bell"></i>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">Vous avez 7 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu inner-content-div">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> Variation hebdomadaire
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Voir toutes les notifications</a></li>
+            </ul>
+          </li>
+          
+         
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+		 <div class="ulogo">
+              <!-- logo for regular state and mobile devices -->
+              <img src="../images/logoAgribourse.png" alt="" width="180">
+		</div>
+        <div class="image">
+          <img src="../images/fleur.jpg" class="rounded-circle" alt="User Image">
+        </div>
+        <div class="info">
+          <p>PENDY FLEUR ADRIELLA</p>
+			<a href="" class="link" data-toggle="tooltip" title="" data-original-title="Parametre"><i class="ion ion-gear-b"></i></a>
+            <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Message"><i class="ion ion-android-mail"></i></a>
+            <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Deconnexion"><i class="ion ion-power"></i></a>
+        </div>
+      </div>
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+		<li class="nav-devider"></li>
+        <li class="">
+          <a href="index.html">
+            <i class="icon-home"></i> <span>Accueil</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="listeprojets.html">
+            <i class="fas fa-project-diagram"></i> <span>Listes des Projets</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <li class="">
+          <a href="importer.html">
+            <i class="fas fa-download"></i><span>Importer des données</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>
+      
+        
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="" style="margin-top:30px;">
+            <div class="col-12">
+                    <div class="box">
+                        <div class="box-body">
+                          <div class="contact-page-aside">
+                            <ul class="list-style-none font-size-16">
+                                <li class="box-label"><a href="javascript:void(0)">Tous les projects <span>2</span></a></li>
+                                <li class="divider"></li>
+                                <li class="box-label"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="btn btn-info text-white mt-10">+ AJOUTER UN PROJET</a></li>	
+                            </ul>					  
+                        </div>
+                      </div>
+                    </div>
+                  <!-- /. box -->
+                </div>
+        
+        <div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Ajouter un projet</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-12">Nom de l'exploitant</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Nom de la structure"> </div>
+                            </div>
+                            <div class="form-group">
+                                    <label class="col-md-12">Description</label>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Description ........"> </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="demo-checkbox">
+                                        <input type="checkbox" id="tomates" class="filled-in" checked />
+                                        <label for="tomates">TOMATE</label>
+                                        <input type="checkbox" id="banane" class="filled-in" checked />
+                                        <label for="banane">BANANE</label>
+                                        <input type="checkbox" id="oignon" class="filled-in" checked />
+                                        <label for="oignon">OIGNON</label>
+                                        <input type="checkbox" id="piment" class="filled-in" checked />
+                                        <label for="piment">PIMENT</label>
+                                        <input type="checkbox" id="manioc" class="filled-in" checked />
+                                        <label for="manioc">MANIOC</label>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn btn-success btn-block" type="submit">Enregistrer</button>
+                                
+                        </form>
+                    </div>
+                    
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="box-body">  
+                    <div class="table-responsive">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <th>Nom de l'exploitant </th>
+                                <th>Produits </th>
+                                <th>Status</th>
+                                <th>Voir plus</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Agri-Pog</td>
+                                    <td>Tomates, Piments, Oignon</td>
+                                    <td><span class="label label-success">Actif</span> 
+                                    </td>
+                                    <td><button type="button" class="btn btn-sm btn-info-outline" data-toggle="modal" data-target="#details"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Ozenga-Collect</td>
+                                    <td>Tomates, Piments, Oignon</td>
+                                    <td><span class="label label-warning">Actif</span></td>
+                                    <td><button type="button" class="btn btn-sm btn-info-outline" data-toggle="modal" data-target="#details"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div id="details" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-lg" style="margin-left:-10%;">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Details sur  AGRI-POG</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box">
+                                <canvas id="myChart" height="510"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+	</section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2018 <a href="https://www.multipurposethemes.com/">Ecole241</a>. Tous droits resérvés.
+  </footer>
+
+
+  
+  
+</div>
+<!-- ./wrapper -->
+  	
+<!-- jQuery 3 -->
+<script src="../assets/vendor_components/jquery/dist/jquery.min.js"></script>
+	
+<!-- popper -->
+<script src="../assets/vendor_components/popper/dist/popper.min.js"></script>
+
+<!-- Bootstrap 4.0-->
+<script src="../assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!-- SlimScroll -->
+<script src="../assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- FastClick -->
+<script src="../assets/vendor_components/fastclick/lib/fastclick.js"></script>
+
+<!-- Crypto_Admin App -->
+<script src="../src/js/template.js"></script>
+
+<!-- Crypto_Admin for demo purposes -->
+<script src="../src/js/demo.js"></script>
+
+<!-- This is data table -->
+  
+  <!-- start - This is for export functionality only -->
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/extensions/Buttons/js/buttons.flash.min.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/ex-js/jszip.min.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/ex-js/pdfmake.min.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/ex-js/vfs_fonts.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/extensions/Buttons/js/buttons.html5.min.js"></script>
+  <script src="../assets/vendor_plugins/DataTables-1.10.15/extensions/Buttons/js/buttons.print.min.js"></script>
+  <!-- end - This is for export functionality only -->
+      <!-- Crypto_Admin for Chart purposes -->
+      
+<script src="../assets/vendor_components/chart.js-master/Chart.min.js"></script>
+  <script src="../src/js/pages/widget-charts2.js"></script>
+  <!-- Crypto_Admin dashboard demo (This is only for demo purposes) -->
+<script src="../src/js/pages/dashboard.js"></script>
+<script src="../src/js/pages/dashboard-chart.js"></script>
+  <script>
+
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var ctx1 = document.getElementById("myChart1").getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ["21 Janvier", "28 janvier", "4 Fevririer", "11 Fevrier", "18 Fevrier", "25 Fevrier"],
+          datasets: [{
+              label: '# Production en tonnes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255,99,132,1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }]
+          }
+      }
+  });
+  var myChart1 = new Chart(ctx1, {
+      type: 'bar',
+      data: {
+          labels: ["21 Janvier", "28 janvier", "4 Fevririer", "11 Fevrier", "18 Fevrier", "25 Fevrier"],
+          datasets: [{
+              label: ["# Exploitant 1", "# Exploitant 2", "# Exploitant 3","# Exploitant 6","# Exploitant 4","# Exploitant 5"],
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255,99,132,1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }]
+          }
+      }
+  });
+</script>	
+
+
+	
+</body>
+</html>
